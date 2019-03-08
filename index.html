@@ -6,12 +6,14 @@
   <script type="text/javascript">
     var dayOfWeek = new Date().getDay();
     
-    if(dayOfWeek === 4) {
-      document.body.innerHTML = "Rejoice!";
-    } else {
-      document.body.innerHTML = "What the cluck?  Not today?";
-    }
+    var el = document.createElement("div");
     
+    if(dayOfWeek === 4) {
+      el.textContent = "Rejoice!";
+    } else {
+      el.textContent = "What the cluck?  Not today?";
+    }
+    document.body.appendChild(el);
   </script>
   
 </head>
