@@ -2,10 +2,21 @@
 
 <head>
   <title>cheapchicken.today</title>
+  
+  <script type="text/javascript">
+    var dayOfWeek = new Date().getDay();
+    
+    if(dayOfWeek === 4) {
+      document.body.innerHTML = "Rejoice!";
+    } else {
+      document.body.innerHTML = "What the cluck?  Not today?";
+    }
+    
+  </script>
+  
 </head>
 
 <body>
-Is today a cheap chicken day?
 </body>
 
 </html>
